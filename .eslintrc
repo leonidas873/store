@@ -1,0 +1,46 @@
+{
+    "extends": [
+      "airbnb",
+      "airbnb-typescript",
+      "airbnb/hooks",
+      "plugin:@typescript-eslint/recommended",
+      "prettier"
+    ],
+    "plugins": ["@typescript-eslint", "prettier"],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "project": "./tsconfig.json"
+    },
+    "rules": {
+      "prettier/prettier": ["error"],
+      "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".tsx"] }],
+      "import/no-extraneous-dependencies": ["error", { "packageDir": "./" }],
+      "@typescript-eslint/no-var-requires": "off",
+      "@typescript-eslint/explicit-function-return-type": "off",
+      "react/react-in-jsx-scope": "off",
+      "import/no-absolute-path": "off",
+      "jsx-a11y/anchor-is-valid": "off",
+      "import/extensions": "off",
+      "react/require-default-props": "off",
+      "react/prop-types": "off",
+      "react/jsx-props-no-spreading": "off",
+      "jsx-a11y/control-has-associated-label": "off"
+      // You can override/add rules here
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true
+    }
+  }
+  
