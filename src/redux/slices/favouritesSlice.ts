@@ -25,7 +25,6 @@ export const cartSlice = createSlice({
   },
 });
 
-// Action creators are generated for each case reducer function
 export const { toggleFavourite } = cartSlice.actions;
 
 export default cartSlice.reducer;
